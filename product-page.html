@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Catalog</title>
+</head>
+<body>
+  <!-- header -->
+  <header class="section-outer">   
+    <div class="section-inner section-inner_header">
+      <div class="topbar">
+        <div class="search-panel">
+          <button type="button" class="search-panel__btn"></button>
+          <input type="search" class="search-panel__input" placeholder="Search products" />
+        </div>
+        <ul class="user-options">
+          <li class="user-options__item">
+            <a href="#" class="user-options__link">
+              <span class="user-options__icon user-options__icon_shopping-cart"></span>
+            </a>
+          </li>
+          <li class="user-options__item">
+            <a href="#" class="user-options__link">
+              <span src="img/user-account.svg" class="user-options__icon user-options__icon_user-account"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- / header -->
+  <main>
+    <!-- product -->
+    <section class="section-outer">
+      <div class="section-inner">
+        <div class="product">
+          <div class="product__photo-wrapper">
+            <img src="img/product-1.png" class="product__photo" />
+          </div>
+          <div class="product__data">
+            <h3 class="product__title">G Home</h3>
+            <p class="product__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ante sit amet mollis luctus. Morbi semper, tellus in finibus tristique, purus odio sodales sem, vitae dignissim enim metus vel purus. Quisque a rutrum leo. Phasellus quis ex sed magna finibus convallis varius luctus justo. Nullam et sapien vel magna ultrices pulvinar. Nunc felis ante, lobortis eget imperdiet in, iaculis at justo. Etiam libero nisl, hendrerit vitae ultricies vitae, pharetra a est. Vivamus vestibulum quam sit amet facilisis consequat. Curabitur sollicitudin arcu arcu, pretium aliquam nibh hendrerit a. Donec diam massa, tempus sed pulvinar a, fermentum et orci.
+            </p>
+            <h4>Details</h4>
+            <p class="product__text">
+              Nulla et mauris sed elit semper pretium a quis augue. Fusce tempus est ex, eu porttitor nulla auctor et. Maecenas eget quam non risus porta elementum. Pellentesque posuere augue in malesuada fermentum. Maecenas vitae viverra mauris. Suspendisse a cursus libero. Pellentesque vitae purus eget lectus lobortis laoreet sed sollicitudin diam. Pellentesque pellentesque eu justo at ullamcorper. Quisque quis egestas magna. Vestibulum et felis id nisi dapibus viverra vel vitae nisl. Morbi lobortis nunc turpis, sed tincidunt quam cursus nec. Morbi eget lorem dolor.
+            </p>          
+            <div class="product__options">
+              <div class="product__price">
+                <span class="product__total">$129</span>
+                <div class="quantity">
+                  <input type="button" value="-" class="quantity__minus">
+                  <input type="number" class="quantity__count" min="0" max="999" value="0">
+                  <input type="button" value="+" class="quantity__plus">
+                </div>                
+              </div>
+              <div class="product__actions">
+                <button type="button" class="btn btn_add">Add to cart</button>
+                <span class="favorite"></span>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>      
+    </section>
+    <!-- / product -->
+  </main>
+  <!-- footer -->
+  <footer></footer>
+  <!-- / footer -->
+</body>
+</html>
