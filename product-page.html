@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Catalog</title>
+</head>
+<body>
+  <!-- header -->
+  <header class="section-outer">   
+    <div class="section-inner section-inner_header">
+      <div class="topbar">
+        <div class="search-panel">
+          <form>
+            <label>
+              <input type="search" class="search-panel__input" placeholder="Search products">
+                <svg class="search-panel__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11V11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z"/>
+              </svg>
+            </label>
+          </form>
+        </div>
+        <ul class="user-options">
+          <li class="user-options__item">
+            <a href="#" class="user-options__link">
+              <span class="user-options__icon user-options__icon_shopping-cart"></span>
+            </a>
+          </li>
+          <li class="user-options__item">
+            <a href="#" class="user-options__link">
+              <span class="user-options__icon user-options__icon_user-account"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- / header -->
+  <main>
+    <!-- product -->
+    <section class="section-outer">
+      <div class="section-inner">
+        <div class="product">
+          <div class="product__photo-wrapper">
+            <img src="img/product-1.png" class="product__photo" />
+          </div>
+          <div class="product__data">
+            <h3 class="product__title">G Home</h3>
+            <p class="product__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ante sit amet mollis luctus. Morbi semper, tellus in finibus tristique, purus odio sodales sem, vitae dignissim enim metus vel purus. Quisque a rutrum leo. Phasellus quis ex sed magna finibus convallis varius luctus justo. Nullam et sapien vel magna ultrices pulvinar. Nunc felis ante, lobortis eget imperdiet in, iaculis at justo. Etiam libero nisl, hendrerit vitae ultricies vitae, pharetra a est. Vivamus vestibulum quam sit amet facilisis consequat. Curabitur sollicitudin arcu arcu, pretium aliquam nibh hendrerit a. Donec diam massa, tempus sed pulvinar a, fermentum et orci.
+            </p>
+            <h4>Details</h4>
+            <p class="product__text">
+              Nulla et mauris sed elit semper pretium a quis augue. Fusce tempus est ex, eu porttitor nulla auctor et. Maecenas eget quam non risus porta elementum. Pellentesque posuere augue in malesuada fermentum. Maecenas vitae viverra mauris. Suspendisse a cursus libero. Pellentesque vitae purus eget lectus lobortis laoreet sed sollicitudin diam. Pellentesque pellentesque eu justo at ullamcorper. Quisque quis egestas magna. Vestibulum et felis id nisi dapibus viverra vel vitae nisl. Morbi lobortis nunc turpis, sed tincidunt quam cursus nec. Morbi eget lorem dolor.
+            </p>          
+            <div class="product__options">
+              <div class="product__price">
+                <span class="product__total">$129</span>
+                <div class="quantity">
+                  <input type="button" value="-" class="quantity__minus" />
+                  <input type="number" class="quantity__count" min="0" max="999" value="0" />
+                  <input type="button" value="+" class="quantity__plus" />
+                </div>                
+              </div>
+              <div class="product__actions">
+                <button type="button" class="btn btn_add">Add to cart</button>
+                <span class="favorite"></span>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>      
+    </section>
+    <!-- / product -->
+  </main>
+</body>
+</html>
