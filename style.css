@@ -164,7 +164,7 @@ input:focus ~ .search-panel__icon > path  {
   align-items: center;
   width: 100%;
   margin: 8px;
-  padding: 71px 0 29px 0;
+  padding: 71px 0 29px;
   background: #fff;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -185,7 +185,7 @@ input:focus ~ .search-panel__icon > path  {
 }
 
 .product-list__photo {
-  width: calc(100%/2);
+  width: 50%;
   margin-bottom: 52px;
 }
 
@@ -336,7 +336,7 @@ input:focus ~ .search-panel__icon > path  {
   }
 
   .product-list {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .product-list__item {
