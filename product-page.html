@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Catalog</title>
+  <title>Product Page</title>
 </head>
 <body>
   <!-- header -->
@@ -76,5 +76,83 @@
     </section>
     <!-- / product -->
   </main>
+
+
+  <!-- <script>
+
+
+
+'use strict';
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  class ProductCard {
+    constructor(id, name, picture, price, like, parentSelector) {
+      this.id = id;
+      this.name = name;
+      this.picture = picture;
+      this.price = price;
+      this.like = like;
+      this.parent = document.querySelector(parentSelector);
+    }
+
+    render() {
+
+     
+
+      const el = document.createElement('li');
+      el.classList.add('product-list__item');      
+      el.innerHTML = `
+        <span class="favorite ${this.like == false ? 'a' : ' active'}"></span>
+        <a href="http://localhost:3006/item/${this.id}" class="product-list__link">
+
+        </a>  
+        <a href="product-page.html" class="product-list__link">
+          <h4 class="product-list__title">${this.name}</h4>
+        </a>  
+
+      `;
+      this.parent.append(el);
+    }
+  }
+
+  const getResource = async (url) => {
+    const res = await fetch(url);
+
+    if (!res.ok) {
+      throw new Error(`Couldn't fetch ${url}, status ${res.status}`);
+    }
+    
+    return await res.json();
+  };
+
+
+
+
+  const xhr2 = new XMLHttpRequest();
+  xhr2.open('GET', `http://localhost:3006/item/${this.id}`);
+  xhr2.responseType = 'json';
+  xhr2.onload = function(e) {
+    if (this.status == 200) { 
+      Object.keys(this.response.content).forEach(({id, name, picture, price, like}) => {
+        new ProductCard(id, name, picture, price, like, '.product').render();
+      });
+    }
+  };
+  xhr2.send();
+
+
+
+  // getResource('http://localhost:3006/item')
+  //   .then(res => {
+      // res.content.forEach(({name, picture, price, like}) => {
+      //   new ProductCard(name, picture, price, like, '.product-list').render();
+      // });
+  //   })
+
+});
+
+
+  </script> -->
 </body>
 </html>
