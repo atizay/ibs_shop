@@ -397,3 +397,7 @@ input:focus ~ .search-panel__icon > path  {
   }
 }
 /* === / MEDIA QUERIES === */
+
+.hide {
+  display: none;
+}
